@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+function playRound(computerSelection,playerSelection){
+    function getcomputerSelection(){
+      const choices = ['rock','paper','scissor'];
+      return choices[Math.floor(Math.random() * choices.length)]
+  } 
+computerSelection = getcomputerSelection()
+playerSelection = prompt("enter ur choice")
+
+
+console.log(`players choice is ${playerSelection}` + ` computers choice is ${computerSelection}`)
+
+if (playerSelection === computerSelection){
+    console.log("tie!")
+}else if(
+    (playerSelection === "rock" && computerSelection === "scissor") ||
+    (playerSelection === "paper" && computerSelection === "rock") ||
+    (playerSelection === "scissor" && computerSelection === "paper")
+) {
+    console.log("player wins!")
+} else {
+     console.log('computer wins!');
+}
+}
+
+
+playRound()
+  </script>
+</body>
+</html>
