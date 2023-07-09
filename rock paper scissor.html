@@ -5,6 +5,13 @@
   <title>Page Title</title>
 </head>
 <body>
+  <h style="color: rebeccapurple;">ROCK PAPER SCISSOR</h>
+  <p>This game is played in the console,</p>
+  <p>Reload to trigger the prompt so you can insert your choice</p>
+  <style>
+  </style>
+
+
   <script>
 function playRound(computerSelection,playerSelection){
     function getcomputerSelection(){
@@ -12,7 +19,7 @@ function playRound(computerSelection,playerSelection){
       return choices[Math.floor(Math.random() * choices.length)]
   } 
 computerSelection = getcomputerSelection()
-playerSelection = prompt("enter ur choice")
+playerSelection = prompt("enter your choice")
 
 
 console.log(`players choice is ${playerSelection}` + ` computers choice is ${computerSelection}`)
